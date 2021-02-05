@@ -2,7 +2,7 @@
 <html lang="zh-CN">
 
 <head>
-    
+    <link rel="stylesheet" type="text/css" href="/css/loading.css">
     <meta charset="utf-8">
     <meta name="keywords" content="渣渣宇的博客">
     <meta name="description" content="博客啊">
@@ -38,13 +38,44 @@
 
 
 <body>
+    
+    <div id="loading-box">
+        <div class="loading-left-bg"></div>
+        <div class="loading-right-bg"></div>
+        <div class="spinner-box">
+            <div class="configure-border-1">
+                <div class="configure-core"></div>
+            </div>
+            <div class="configure-border-2">
+                <div class="configure-core"></div>
+            </div>
+            <div class="loading-word">少女祈祷中...</div>
+        </div>
+    </div>
+    <script>
+        window.addEventListener('load', function(){
+            document.body.style.overflow = 'auto';
+            document.getElementById('loading-box').classList.add("loaded")
+        }, false)
+    </script>
+    
+
+    <a onclick="switchNightMode()" id="sma">
+        <i class="fa fa-moon-o" id="nightMode" aria-hidden="true"></i>
+    </a>
+    <script type="text/javascript">
+        var OriginTitile=document.title,st;
+        document.addEventListener("visibilitychange",function(){
+            document.hidden?(document.title="ヽ(●-`Д´-)ノ别走",clearTimeout(st)):(document.title="(Ő∀Ő3)ノ好哦！",st=setTimeout(function(){document.title=OriginTitile},3e3))
+        })
+    </script>
     <header class="navbar-fixed">
     <nav id="headNav" class="bg-color nav-transparent">
         <div id="navContainer" class="nav-wrapper container">
             <div class="brand-logo">
                 <a href="/" class="waves-effect waves-light">
                     
-                    <img src="medias/loading.gif" data-original="/medias/logo.ico" class="logo-img" alt="LOGO">
+                    <img src="/medias/logo.ico" class="logo-img" alt="LOGO">
                     
                     <span class="logo-span">渣渣宇的博客</span>
                 </a>
@@ -143,7 +174,7 @@
 
     <div class="mobile-head bg-color">
         
-        <img src="medias/loading.gif" data-original="/medias/logo.ico" class="logo-img circle responsive-img">
+        <img src="/medias/logo.ico" class="logo-img circle responsive-img">
         
         <div class="logo-name">渣渣宇的博客</div>
         <div class="logo-desc">
@@ -322,7 +353,7 @@
             </div>
         </div>
     </div>
-</div>
+</div>  
 
 
 <script>
@@ -372,29 +403,6 @@
         
             
             <div class="carousel-item amber white-text carousel-post bg-cover"
-                 style="background-image: url('/medias/featureimages/1.jpg');">
-                <div class="container">
-                    <div class="row">
-                        <div class="col s10 offset-s1">
-                            <div class="title center-align">markdown常用语法</div>
-                            <div class="description center-align">
-                                
-                                    一、概述1.1 设计理念Markdown 易于阅读，方便创作web文档，利于各平台无缝分发。Markdown 语法灵感最大的来源还是纯文本 email 的格式，完全由标点符号标签组成的纯文本。Markdown 文件应该以纯文本形式原样发布，
-                                
-                            </div>
-                            <div class="cover-btns">
-                                <a href="/posts/43275.html" class="waves-effect waves-light btn"
-                                   target="_blank">
-                                    <i class="icon fa fa-eye fa-fw"></i>阅读更多
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        
-            
-            <div class="carousel-item amber white-text carousel-post bg-cover"
                  style="background-image: url('/medias/featureimages/13.jpg');">
                 <div class="container">
                     <div class="row">
@@ -408,6 +416,29 @@
                             </div>
                             <div class="cover-btns">
                                 <a href="/posts/59448.html" class="waves-effect waves-light btn"
+                                   target="_blank">
+                                    <i class="icon fa fa-eye fa-fw"></i>阅读更多
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            
+            <div class="carousel-item amber white-text carousel-post bg-cover"
+                 style="background-image: url('/medias/featureimages/1.jpg');">
+                <div class="container">
+                    <div class="row">
+                        <div class="col s10 offset-s1">
+                            <div class="title center-align">markdown常用语法</div>
+                            <div class="description center-align">
+                                
+                                    一、概述1.1 设计理念Markdown 易于阅读，方便创作web文档，利于各平台无缝分发。Markdown 语法灵感最大的来源还是纯文本 email 的格式，完全由标点符号标签组成的纯文本。Markdown 文件应该以纯文本形式原样发布，
+                                
+                            </div>
+                            <div class="cover-btns">
+                                <a href="/posts/43275.html" class="waves-effect waves-light btn"
                                    target="_blank">
                                     <i class="icon fa fa-eye fa-fw"></i>阅读更多
                                 </a>
@@ -497,12 +528,12 @@
                         <div class="dream">
     
     <div class="title center-align">
-        <i class="far fa-lightbulb"></i>&nbsp;&nbsp;目前的人生信条
+        <i class="far fa-lightbulb"></i>&nbsp;&nbsp;阿巴阿巴
     </div>
     
     <div class="row">
         <div class="col l8 offset-l2 m10 offset-m1 s10 offset-s1 center-align text">
-            有先富而后贫，有先贫而后富。君子失时拱手于小人之下，天不得时草木不长，人不得时利运不通，盖人生在世，贫贱不能屈，富贵不能淫。此乃天地万物之循环矣。 -郭德纲
+            有先富而后贫，有先贫而后富。君子失时拱手于小人之下，天不得时草木不长，人不得时利运不通，盖人生在世，贫贱不能屈，富贵不能淫。此乃天地万物之循环矣。       -郭德纲
         </div>
     </div>
 </div>
@@ -516,6 +547,26 @@
                     
                 </div>
             </div>
+            <div class="card">
+                <div class="Notice">
+    <div class="row1">
+        <div class="col l8 offset-l2 m10 offset-m1 s10 offset-s1 center-align text" style="font-size: larger;">公告：</div>
+        <div class="col l8 offset-l2 m10 offset-m1 s10 offset-s1 text">
+            <br>近况 目前在上带学，懒狗一条，好吃懒做还想赚大钱
+            <br>
+            近期目标：好好训练争取拿下武汉高校冠军<br>
+            博客近况：还在建设中，一边建设一边捡起还给老师的东西<br>
+            博客源代码：等我建完会发一期0基础的教程的啦<br>
+            最近想搞台笔记本专门打代码，有推荐的吗<br>
+            <br>
+            <br>
+            
+        </div>
+    </div>
+</div>
+
+            </div>
+
         </div>
     </div>
     
@@ -532,7 +583,7 @@
                         <div class="card-image">
                             
                             
-                            <img src="medias/loading.gif" data-original="/medias/featureimages/22.jpg" class="responsive-img" alt="论目前网络主播">
+                            <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="论目前网络主播">
                             
                             <span class="card-title">论目前网络主播</span>
                         </div>
@@ -579,7 +630,7 @@
                         <div class="card-image">
                             
                             
-                            <img src="medias/loading.gif" data-original="/medias/featureimages/13.jpg" class="responsive-img" alt="第一篇博客">
+                            <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="第一篇博客">
                             
                             <span class="card-title">第一篇博客</span>
                         </div>
@@ -627,7 +678,7 @@
                         <div class="card-image">
                             
                             
-                            <img src="medias/loading.gif" data-original="/medias/featureimages/1.jpg" class="responsive-img" alt="markdown常用语法">
+                            <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="markdown常用语法">
                             
                             <span class="card-title">markdown常用语法</span>
                         </div>
@@ -714,14 +765,14 @@
         <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
                    server="netease"
                    type="playlist"
-                   id="503838841"
+                   id="402328846"
                    fixed='true'
                    autoplay='false'
                    theme='#42b983'
                    loop='all'
                    order='random'
                    preload='auto'
-                   volume='0.7'
+                   volume='0.2'
                    list-folded='true'
         >
         </meting-js>
@@ -939,12 +990,6 @@ $(function () {
     
 
     
-    <script type="text/javascript">
-        var OriginTitile=document.title,st;
-        document.addEventListener("visibilitychange",function(){
-            document.hidden?(document.title="ヽ(●-`Д´-)ノ别走",clearTimeout(st)):(document.title="(Ő∀Ő3)ノ好哦！",st=setTimeout(function(){document.title=OriginTitile},3e3))
-        })
-    </script>
     
 
 	
@@ -964,6 +1009,20 @@ $(function () {
     
     <script src="/libs/instantpage/instantpage.js" type="module"></script>
     
+    <script>
+        if (localStorage.getItem('dark') === '1') {
+        document.body.classList.add('dark');
+        }
+        else if (new Date().getHours() >= 22 || new Date().getHours() < 7) {
+        document.body.classList.add('dark');
+        } 
+        else if (matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+        }
+    </script>
+    <a onclick="switchNightMode()" id="sma">
+        <i class="fa fa-moon-o" id="nightMode" aria-hidden="true"></i>
+    </a>
 <script>
             window.imageLazyLoadSetting = {
                 isSPA: false,
