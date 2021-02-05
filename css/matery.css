@@ -92,7 +92,12 @@ hr {
     border: 0;
     border-top: 1px solid #ccc;
 }
-
+/* 又拍云logo*/
+.youpaiyunlogo{
+    height: 26px;
+    display: inline-block;
+    vertical-align: top;
+}
 blockquote {
     border-left: 5px solid #42b983;
     padding: 1rem 0.8rem 0.2rem 0.8rem;
@@ -2138,12 +2143,6 @@ footer .copy-right {
     height: 50px;
     padding: 0;
     margin: 0;
-}
-/* 又拍云logo*/
-.youpaiyunlogo{
-    height: 26px;
-    display: inline-block;
-    vertical-align: top;
 }
     /* 深色模式按钮设置 */
     #sma {
