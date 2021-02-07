@@ -2181,7 +2181,7 @@ footer .copy-right {
     }
     /* 深色模式设置 */
     /* 字体颜色变灰白色 */ 
-    body.dark .fas,
+    body.dark .fas, 
     body.dark .title,
     body.dark .row .text,
     body.dark article .article-content .summary,

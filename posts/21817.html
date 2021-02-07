@@ -162,6 +162,40 @@
     
   </li>
   
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="" class="waves-effect waves-light">
+
+      
+      <i class="fas fa-flask" style="zoom: 0.6;"></i>
+      
+      <span>实验室</span>
+      <i class="fas fa-chevron-down" aria-hidden="true" style="zoom: 0.6;"></i>
+    </a>
+    <ul class="sub-nav menus_item_child ">
+      
+      <li>
+        <a href="/base64">
+          
+          <i class="fas fa-check" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>base64加密解密</span>
+        </a>
+      </li>
+      
+      <li>
+        <a href="/dinosword">
+          
+          <i class="fas fa-check" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>chrome小恐龙</span>
+        </a>
+      </li>
+      
+    </ul>
+    
+  </li>
+  
   <li>
     <a href="#searchModal" class="modal-trigger waves-effect waves-light">
       <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
@@ -265,6 +299,41 @@
           
         </li>
         
+        <li class="m-nav-item">
+	  
+		<a href="javascript:;">
+			
+				<i class="fa-fw fas fa-flask"></i>
+			
+			实验室
+			<span class="m-icon"><i class="fas fa-chevron-right"></i></span>
+		</a>
+            <ul  style="background:  ;" >
+              
+                <li>
+
+                  <a href="/base64 " style="margin-left:75px">
+				  
+				   <i class="fa fas fa-check" style="position: absolute;left:50px" ></i>
+			      
+		          <span>base64加密解密</span>
+                  </a>
+                </li>
+              
+                <li>
+
+                  <a href="/dinosword " style="margin-left:75px">
+				  
+				   <i class="fa fas fa-check" style="position: absolute;left:50px" ></i>
+			      
+		          <span>chrome小恐龙</span>
+                  </a>
+                </li>
+              
+            </ul>
+          
+        </li>
+        
         
     </ul>
 </div>
@@ -281,7 +350,7 @@
 <script src="/libs/cryptojs/crypto-js.min.js"></script>
 <script>
     (function() {
-        let pwd = '';
+        let pwd = 'f0ddf42fbfec6691af3f7a57d8dfec0dd5a9e387707f462620dd5a5054e85472';
         if (pwd && pwd.length > 0) {
             if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
                 alert('密码错误，将返回主页！');
@@ -447,7 +516,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2021-02-06
+                    2021-02-07
                 </div>
                 
 
